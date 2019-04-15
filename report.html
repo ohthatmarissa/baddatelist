@@ -6,7 +6,7 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-<div class="container">
+<br class="container">
 
     <div class="row">
         <div class="col-md-3">
@@ -26,26 +26,74 @@
 
         </div>
     </div>
-    <form id="report">
+    <br id="report">
         <h2>Make a Report</h2>
         <label for="location"> Location</label>
-        <select id="location">
+            <select id="location">
             <option value=""selected disabled hidden>Choose</option>
             <option name="Capitol hill">Capitol Hill</option>
             <option name="West Seattle">West Seattle</option>
             <option name="Ballard">Ballard</option>
             <option name="Belltown">Belltown</option>
-        </select>
-        
+            </select></br>
         <label for="place"> Place</label>
-        <select id="place">
+            <select id="place">
+                <option value=""selected disabled hidden>Choose</option>
+                <option name="hotel">Hotel</option>
+                <option name="street">Street</option>
+                <option name="apartment">Apartment</option>
+                <option name="nightclub">Nightclub/Bar</option>
+            </select></br>
+        <label for="incident"> What happened?</label>
+        <select id="incident">
             <option value=""selected disabled hidden>Choose</option>
-            <option name="hotel">Hotel</option>
-            <option name="street">Street</option>
-            <option name="apartment">Apartment</option>
-            <option name="nightclub">Nightclub/Bar</option>
-        </select>
-
+            <option name="assault">Assault</option>
+            <option name="robbery">Robbery</option>
+            <option name="harassment">Harassment</option>
+            <option name="drugs">They drugged me</option>
+        </select><br>
+        <label for="contact"> How did they contact you?</label>
+        <select id="contact">
+            <option value=""selected disabled hidden>Choose</option>
+            <option name="phone">Phone</option>
+            <option name="email">Email</option>
+            <option name="in-person">In-person</option>
+            <option name="ad">Online ad</option>
+        </select></br>
+        <label for="gender"> Perpetrator's gender</label>
+        <select id="gender">
+            <option value=""selected disabled hidden>Choose</option>
+            <option name="male">Male</option>
+            <option name="female">Female</option>
+            <option name="non-binary">Non-binary</option>
+            <option name="other">Other</option>
+        </select></br>
+        <label for="ethnicity"> Perpetrator's ethnicity</label>
+        <select id="ethnicity">
+            <option value=""selected disabled hidden>Choose</option>
+            <option name="male">White</option>
+            <option name="female">Black</option>
+            <option name="non-binary">Asian</option>
+            <option name="other">Latino</option>
+        </select></br>
+        <label for="hair"> Hair Color</label>
+        <select id="gender">
+            <option value=""selected disabled hidden>Choose</option>
+            <option name="short">Short</option>
+            <option name="long">Long</option>
+            <option name="curly">Curly</option>
+            <option name="straight">Straight</option>
+            <option name="bald">Bald</option>
+            <option name="other">Other</option>
+        </select></br>
+        <label for="time"> When  did it happen?</label>
+        <input id = "time"class="form-control" type="date">
+        <label for="description">Describe your accident</label>
+        <textarea class="form-control" id="description" rows="3"></textarea></br>
+        <label for="name">Perp's name</label></br>
+        <input type="name" class="form-control" id="name" placeholder="full name"></br>
+        <label for="email">Perp Email address</label></br>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
 
 </body>
 
