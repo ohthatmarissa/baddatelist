@@ -1,3 +1,10 @@
 .jumbotron {
   background-color: #ccffcc;
 }
+h3 {
+  color: red;
+}
+
+h2 {
+  text-decoration: underline;
+}
