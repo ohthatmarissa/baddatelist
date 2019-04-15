@@ -1,11 +1,11 @@
 .jumbotron {
 border: 4mm ridge rgb(175, 10, 10);
-background-image: url(../img/skyline.jpeg);
+background-image: url(../img/skyline.jpg);
+background-position-y: 25%;
 background-size: cover;
 text-align: center;
-background-position: center;
-background-repeat: no-repeat;
-margin: 5%;
+color: red;
+margin: 3%;
 }
 
 body {
@@ -17,4 +17,11 @@ body {
   border:4px solid black;
   border-radius: 30px;
   background-color: #af0a0a;
+}
+
+.topbar:hover {
+  color: orange;
+  cursor: pointer;
+  text-decoration: underline;
+
 }
