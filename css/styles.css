@@ -1,26 +1,38 @@
 .jumbotron {
   min-height: 300px;
-  border: 4mm ridge rgb(175, 10, 10);
-  background-image: url(../img/skyline.jpg);
+  /* border: 10px solid black; */
+  background-image: url(../img/seattle.jpeg);
   background-position-y: 5%;
   background-size: cover;
-  text-align: bottom;
-  color: red;
-  margin: 3%;
 }
 /* #jumboH1 {
   float: bottom;
 } */
 body {
   text-align: center;
-  background-color: #dba197;
+}
+
+#heading {
+  background-color: #ccffcc;
+  height: 200px;
+  font-family: Impact, fantasy;
+  letter-spacing: 5px;
+  font-size: 48pt;
+  text-shadow: 1px 1px 3px #ff3377;
+  font
 }
 
 .box {
   height: 8%
-  border:4px solid black;
-  border-radius: 30px;
-  background-color: #af0a0a;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  background-color: #99ccff;
+  text-align: center;
+  text-shadow: 1px 1px 3px white;
+  font-size: 18pt;
 }
 
 .topbar:hover {
@@ -29,20 +41,33 @@ body {
   text-decoration: underline;
 }
 h4 {
-  color: red;
+  font-family: Impact, fantasy;
+  font-size: 22pt;
   text-decoration: underline;
   text-decoration-color: black;
+  text-shadow: 1px 1px 3px #f0f0f5;
 }
 
 img.align-left {
   height: 200px;
   float: left;
   margin-right: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+
 }
 img.align-right {
   height: 200px;
   float: right;
   margin-left: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
 }
 
 .p1 {
@@ -56,4 +81,8 @@ img.align-right {
 .p3 {
   text-align: left;
   font-size: 20px
+}
+
+footer {
+   background:#e6ffe6;
 }
