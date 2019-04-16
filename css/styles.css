@@ -1,15 +1,19 @@
 .jumbotron {
-border: 4mm ridge rgb(175, 10, 10);
-background-image: url(../img/skyline.jpg);
-background-position-y: 25%;
-background-size: cover;
-text-align: center;
-color: red;
-margin: 3%;
+  min-height: 300px;
+  border: 4mm ridge rgb(175, 10, 10);
+  background-image: url(../img/skyline.jpg);
+  background-position-y: 5%;
+  background-size: cover;
+  text-align: bottom;
+  color: red;
+  margin: 3%;
 }
-
+/* #jumboH1 {
+  float: bottom;
+} */
 body {
   text-align: center;
+  background-color: #dba197;
 }
 
 .box {
@@ -23,5 +27,33 @@ body {
   color: orange;
   cursor: pointer;
   text-decoration: underline;
+}
+h4 {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
 
+img.align-left {
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+}
+img.align-right {
+  height: 200px;
+  float: right;
+  margin-left: 10px;
+}
+
+.p1 {
+  text-align: left;
+  font-size: 20px
+}
+.p2 {
+  text-align: right;
+  font-size: 20px
+}
+.p3 {
+  text-align: left;
+  font-size: 20px
 }
