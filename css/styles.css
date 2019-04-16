@@ -13,12 +13,11 @@ body {
 }
 
 #heading {
-  background-color: #ccffcc;
-  height: 200px;
+  background-color: #cc0000;
   font-family: Impact, fantasy;
   letter-spacing: 5px;
   font-size: 48pt;
-  text-shadow: 1px 1px 3px #ff3377;
+  text-shadow: 1px 1px 3px white;
   font
 }
 
@@ -29,10 +28,11 @@ body {
   border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
   -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
   -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
-  background-color: #99ccff;
+  background-color: #ff6699;
   text-align: center;
   text-shadow: 1px 1px 3px white;
   font-size: 18pt;
+  color: black;
 }
 
 .topbar:hover {
@@ -45,7 +45,7 @@ h4 {
   font-size: 22pt;
   text-decoration: underline;
   text-decoration-color: black;
-  text-shadow: 1px 1px 3px #f0f0f5;
+  text-shadow: 1px 1px 1px #cc0000;
 }
 
 img.align-left {
@@ -84,5 +84,5 @@ img.align-right {
 }
 
 footer {
-   background:#e6ffe6;
+   background: #cc0000;
 }
