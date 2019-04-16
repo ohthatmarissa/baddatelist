@@ -13,14 +13,15 @@
 } */
 body {
   text-align: center;
-  background-color: #dba197;
+  background-color: #bfb3b1;
 }
 
 .box {
-  height: 8%
-  border:4px solid black;
-  border-radius: 30px;
+  height: 8%;
   background-color: #af0a0a;
+  border-radius: 30px;
+  border:4px;
+  border-color: black;
 }
 
 .topbar:hover {
