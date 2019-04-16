@@ -6,33 +6,54 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-<div class="container">
+  <div class="jumbotron">
+    <h1 id="jumboH1"> Seattle Bad Date List</h1>
+  </div>
+  <div class="box">
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <p class="topbar"><a href="home.html" style="color:orange">Home</p>
+      </div>
+      <div class="col-md-3">
+        <p class="topbar"><a href="viewReport.html" style="color:orange">View Reports</a></p>
+      </div>
+      <div class="col-md-3">
+        <p class="topbar"><a href="report.html" style="color:orange">Make Reports</a></p>
+      </div>
+      <div class="col-md-3">
+        <p class="topbar"><a href="resources.html" style="color:orange">Resources</a></p>
+      </div>
+
+    </div>
+
+  </div>
+<div id = "firstPage" class="container">
 <form id="report">
         <h2>Make a Report</h2>
-        <div id="location">
-            <p>Location:</p>
-            <input type="radio" name="Capitol Hill" value=""checked> Capitol Hill<br>
-            <input type="radio" name="West Seattle" value="">West Seattle<br>
-            <input type="radio" name="Ballard"value="">Ballard<br>
-            <input type="radio" name="Belltown"value="">Belltown<br>
-            <input type="radio" name="Queen Anne"value="">Queen Anne<br>
-            <input type="radio" name="Magnolia" value="">Magnolia<br>
-            <input type="radio" name="Freemont"value="">Freemont<br>
-            <input type="radio" name="Downtown"value="">Downtown<br>
-            <input type="radio" name="" value="">Other <input type="text" name="other_location"/>
-        </div>
-
-
-            <div id="place">
-              <p>Place:</p>
-              <input type="radio" name="Hotel" value=""checked>Hotel<br>
-              <input type="radio" name="Street" value="">Street<br>
-              <input type="radio" name="Apartment"value="">Apartment<br>
-              <input type="radio" name="nightclub/Bar"value="">Nightclub/Bar<br>
-              <input type="radio" name="client's house"value="">Client's House<br>
-              <input type="radio" name="worker's house" value="">Worker's house<br>
-              <input type="radio" name="Parlour"value="">Parlour<br>
-            <input type="radio" name="" value="">Other <input type="text" name="other_location"/>
+        <div id="neighborhood">
+            <h4>Neighborhood:</h4>
+            <input type="radio" name="neighborhood" value=""checked> Capitol Hill<br>
+            <input type="radio" name="neighborhood" value=""> West Seattle<br>
+            <input type="radio" name="neighborhood"value=""> Ballard<br>
+            <input type="radio" name="neighborhood"value=""> Belltown<br>
+            <input type="radio" name="neighborhood"value=""> Queen Anne<br>
+            <input type="radio" name="neighborhood" value=""> Magnolia<br>
+            <input type="radio" name="neighborhood"value=""> Fremont<br>
+            <input type="radio" name="neighborhood"value=""> Downtown<br>
+            <input type="radio" name="" value=""> Other <input type="text" name="other_location"/>
+        </div><br>
+        <div id="place">
+              <h4>Place:</h4>
+              <input type="radio" name="place" value=""checked> Hotel<br>
+              <input type="radio" name="place" value=""> Street<br>
+              <input type="radio" name="place"value=""> Apartment<br>
+              <input type="radio" name="place"value=""> Nightclub/Bar<br>
+              <input type="radio" name="Place"value=""> Client's House<br>
+              <input type="radio" name="place" value=""> Worker's house<br>
+              <input type="radio" name="Place"value=""> Parlour<br>
+            <input type="radio" name="place" value=""> Other <input type="text" name="other_location"/>
           </div>
         <label for="incident"> What happened?</label>
         <select id="incident">
@@ -42,13 +63,13 @@
             <option name="harassment">Harassment</option>
             <option name="drugs">They drugged me</option>
         </select><br>
-        <div id="contact">
+        <div id="contacted">
           <p>How did they contact you?</p>
-          <input type="radio" name="phone" value=""checked>Phone<br>
-          <input type="radio" name="Email" value="">Email<br>
-          <input type="radio" name="In-person"value="">In-person<br>
-          <input type="radio" name="Online ad"value="">Online Ad<br>
-          <input type="radio" name="Print ad"value="">Print ad<br>
+          <input type="radio" name="contact" value="phone">Phone<br>
+          <input type="radio" name="contact" value="email">Email<br>
+          <input type="radio" name="contact"value="in-person">In-person<br>
+          <input type="radio" name="contact"value="online">Online Ad<br>
+          <input type="radio" name="contact"value="print">Print ad<br>
         <input type="radio" name="" value="">Other <input type="text" name="other_way"/>
       </div>
         <label for="gender"> Perpetrator's gender</label>
@@ -67,17 +88,15 @@
             <option name="non-binary">Asian</option>
             <option name="other">Latino</option>
         </select></br>
-        <label for="hair"> Hair Style</label>
+        <label for="hair"> Hair color</label>
         <select id="hair">
             <option value=""selected disabled hidden>Choose</option>
-            <option name="short">Short</option>
-            <option name="long">Long</option>
-            <option name="curly">Curly</option>
-            <option name="straight">Straight</option>
-            <option name="bald">Bald</option>
-            <option name="other">Other</option>
+            <option name="blonde">Blonde</option>
+            <option name="black">Black</option>
+            <option name="red">Red</option>
+            <option name="brown">Brown</option>
         </select></br>
-        <div id="contact">
+        <div id="hairstyle">
           <p>Hair Style?</p>
           <input type="checkbox" name="short" value="">Short<br>
           <input type="checkbox" name="long" value="">Long<br>
@@ -85,16 +104,30 @@
           <input type="checkbox" name="straight"value="">Straight<br>
           <input type="checkbox" name="bald"value="">Bald<br>
         </div>
+        <div class="col-md-3">
         <label for="time"> When  did it happen?</label>
+
         <input id = "time"class="form-control" type="date">
-        <label for="description">Describe your accident</label>
+        </div>
+        <label for="description">Describe your incident</label>
         <textarea class="form-control" id="description" rows="3"></textarea></br>
         <label for="name">Perpetrator's  name</label></br>
         <input type="name" class="form-control" id="name" placeholder="full name"></br>
+        <label for="name">Perpetrator's car</label></br>
+        <input type="name" class="form-control" id="name" placeholder="model make license plate"></br>
         <label for="phone">Perpetrator's  phone number</label></br>
         <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX"></br>
         <label for="email">Perpetrator's Email address</label></br>
         <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
+        <button class="btn btn-info" type="submit">Report</button>
+      </form>
+      <div id="hiddenText">
+        <p><span id="confirmation"></span></p>
+    </div>
+</div>
+<div id="thankYouPage" class="container" style="...">
+    <h1>We are here for you..</h1>
+</div>
 </div>
 </body>
 
