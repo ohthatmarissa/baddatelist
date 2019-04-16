@@ -1,7 +1,27 @@
 .jumbotron {
   background-color: #ccffcc;
   text-align: center;
+  font-family: Impact, fantasy;
+  letter-spacing: 5px;
+  font-size: 48pt;
+  text-shadow: 1px 1px 3px #ff3377;
 }
+
+
+
+.box {
+  height: 8%
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  background-color: #99ccff;
+  text-align: center;
+  text-shadow: 1px 1px 3px white;
+
+}
+
 h3 {
   color: red;
   text-align: center;
@@ -10,12 +30,61 @@ h3 {
 h2 {
   text-decoration: underline;
   text-align: center;
+  /* text-shadow: 1px 1px 3px #ff3377; */
+}
+
+img {
+  border-radius: 20px;
+  opacity: .8;
+}
+
+h3 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  /* border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em; */
+}
+
+.aurora {
+  /* background-color: pink; */
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+
+.ops {
+  /* background-color: pink; */
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+
+.rest {
+  /* background-color: pink; */
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+
+.ywca {
+  /* background-color: pink; */
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
 }
 
 footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;
    background:#e6ffe6;
 }
