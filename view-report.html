@@ -10,31 +10,73 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1 id="jumboH1"> Seattle Bad Date List</h1>
+      <h1 id="jumboH1">Seattle Bad Date List</h1>
     </div>
     <div class="container">
-
-        <div class="box" id="navBar">
-          <div class="row">
-            <div class="col-md-3">
-              <p class="topbar"><a href="index.html" style="color:orange">Home</p>
-            </div>
-            <div class="col-md-3">
-              <p class="topbar"><a href="view-report.html" style="color:orange">View Reports</a></p>
-            </div>
-            <div class="col-md-3">
-              <p class="topbar"><a href="report.html" style="color:orange">Make Reports</a></p>
-            </div>
-            <div class="col-md-3">
-              <p class="topbar"><a href="resources.html" style="color:orange">Resources</a></p>
-            </div>
+      <div class="box" id="navBar">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="topbar"><a href="index.html" style="color:orange">Home</p>
+          </div>
+          <div class="col-md-3">
+            <p class="topbar"><a href="view-report.html" style="color:orange">View Reports</a></p>
+          </div>
+          <div class="col-md-3">
+            <p class="topbar"><a href="report.html" style="color:orange">Make Reports</a></p>
+          </div>
+          <div class="col-md-3">
+            <p class="topbar"><a href="resources.html" style="color:orange">Resources</a></p>
           </div>
         </div>
+      </div>
 
       <form id="viewReport">
-        <h2>View Reports</h2>
-      </form>
+        <h2>View Reports</h2><br>
+        <div class="row">
 
+          <div class="col-md-3">
+            <h3 align="left">Filter Search Fields</h3>
+            <div class="form-group">
+              <label for="scumbagName">Scumbag's Name:</label>
+              <input type="text"  class="form-control" placeholder="Search..">
+            </div>
+            <div class="form-group">
+              <label for="scumbagPhone">Scumbag's Phone Number:</label>
+              <input type="phone" class="form-control" placeholder="XXX-XXX-XXXX">
+            </div>
+            <div class="form-group">
+              <label for="scumbagEmail">Scumbag's Email Address:</label>
+              <input type="phone" class="form-control" placeholder="scumbag@scummy.com">
+            </div>
+            <select class="Neighborhood">
+                <label for="Neighborhood">Neighborhood</label>
+                <option value="">Select Neighborhood</option>
+                <option value="Capitol Hill" name= "Capitol Hill"> Capitol Hill</option>
+                <option value="West Seattle" name="West Seattle">West Seattle</option>
+                <option value="Ballard" name="Ballard">Ballard</option>
+                <option value="Belltown" name="Belltown">Belltown</option>
+                <option value="Queen Anne" name="Queen Anne">Queen Anne</option>
+                <option value="Magnolia" name="Magnolia">Magnolia</option>
+                <option value="Fremont" name="Fremont">Fremont</option>
+                <option value="Downtown" name="Downtown">Downtown</option>
+                <option value="Greenwood" name="Greenwood">Greenwood</option>
+                <option value="Greenlake" name="Greenlake">Greenlake</option>
+                <option value="Wallingford" name="Wallingford">Wallingford</option>
+            </select>
+          </div>
+
+          <div class="col-md-8 offset-md-1 ">
+            <h3>Search Results:</h3>
+            <div align="left" class="showSearchResults">
+              <p>Scumbag Name: <span class="scumbagName"></span></p>
+              <p>Scumbag Phone: <span class="scumbagPhone"></span></p>
+              <p>Scumbag Email: <span class="scumbagEmail"></span></p>
+
+            </div>
+          </div>
+
+        </div>
+      </form>
     </div>
   </body>
 </html>
