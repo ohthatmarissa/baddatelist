@@ -170,8 +170,6 @@ function attachReportListeners() {
     $("form#report").submit(function(event){
       event.preventDefault();
 
-
-
       reportList.addReport(new Report($("input[name=neighborhood]:checked").val(), $("input[name=place]:checked").val(), $("#incident").val(), $("input[name=contacted]:checked").val(),
       $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("input[type='checkbox']").val(), $("#time").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
       ));
