@@ -5,9 +5,7 @@
   background-position-y: 5%;
   background-size: cover;
 }
-/* #jumboH1 {
-  float: bottom;
-} */
+
 body {
   text-align: center;
 }
@@ -85,4 +83,8 @@ img.align-right {
 
 footer {
    background: #cc0000;
+}
+
+#displayResult {
+  display: none;
 }

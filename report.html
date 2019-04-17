@@ -1,18 +1,16 @@
 <html>
   <head>
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="css/report.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
       <script src="js/jquery-3.4.0.js"></script>
-      <script src="js/scripts.js"></script>
+      <script src="js/report.js"></script>
   </head>
   <body>
     <div class="jumbotron">
       <h1 id="jumboH1"> Seattle Bad Date List</h1>
     </div>
     <div class="box">
-
       <div class="row">
-
         <div class="col-md-3">
           <p class="topbar"><a href="index.html" style="color:black">Home</p>
         </div>
@@ -25,17 +23,16 @@
         <div class="col-md-3">
           <p class="topbar"><a href="resources.html" style="color:black">Resources</a></p>
         </div>
-
       </div>
-
     </div>
+
   <div id ="firstPage" class="container">
-  <form id="report">
+    <form id="report">
           <h2>Make a Report</h2>
           <div id="neighborhood">
               <h4>Neighborhood:</h4>
               <input type="radio" name="neighborhood" value="Capitol Hill"> Capitol Hill<br>
-              <input type="radio" name="neighborhood" value="WEstSeattle"> West Seattle<br>
+              <input type="radio" name="neighborhood" value="WestSeattle"> West Seattle<br>
               <input type="radio" name="neighborhood" value="Ballard"> Ballard<br>
               <input type="radio" name="neighborhood" value="Belltown"> Belltown<br>
               <input type="radio" name="neighborhood" value="Queen Anne"> Queen Anne<br>
@@ -46,22 +43,22 @@
           </div><br>
           <div id="place">
                 <h4>Place:</h4>
-                <input type="radio" name="place" value=""> Hotel<br>
-                <input type="radio" name="place" value=""> Street<br>
-                <input type="radio" name="place" value=""> Apartment<br>
-                <input type="radio" name="place" value=""> Nightclub/Bar<br>
-                <input type="radio" name="place" value=""> Client's House<br>
-                <input type="radio" name="place" value=""> Worker's house<br>
-                <input type="radio" name="place" value=""> Parlour<br>
+                <input type="radio" name="place" value="hotel"> Hotel<br>
+                <input type="radio" name="place" value="street"> Street<br>
+                <input type="radio" name="place" value="apartment"> Apartment<br>
+                <input type="radio" name="place" value="nightclub/bar"> Nightclub/Bar<br>
+                <input type="radio" name="place" value="client's house"> Client's House<br>
+                <input type="radio" name="place" value="worker's house"> Worker's house<br>
+                <input type="radio" name="place" value="parlour"> Parlour<br>
               <input type="radio" name="place" value=""> Other <input type="text" name="other_location"/>
-            </div>
+            </div><br>
           <label for="incident"> What happened?</label>
           <select id="incident">
               <option value=""selected disabled hidden>Choose</option>
-              <option name="assault">Assault</option>
-              <option name="robbery">Robbery</option>
-              <option name="harassment">Harassment</option>
-              <option name="drugs">They drugged me</option>
+              <option name="incident" value="assault">Assault</option>
+              <option name="incident" value="robbery">Robbery</option>
+              <option name="incident" value="harassment">Harassment</option>
+              <option name="incident" value="drugged">They drugged me</option>
           </select><br>
           <div id="contacted">
             <p>How did they contact you?</p>
@@ -83,55 +80,70 @@
           <label for="ethnicity"> Perpetrator's ethnicity</label>
           <select id="ethnicity">
               <option value=""selected disabled hidden>Choose</option>
-              <option name="male">White</option>
-              <option name="female">Black</option>
-              <option name="non-binary">Asian</option>
-              <option name="other">Latino</option>
+              <option name="male" value="white">White</option>
+              <option name="female" value="black">Black</option>
+              <option name="non-binary" value="asian">Asian</option>
+              <option name="other" value="latino">Latino</option>
           </select></br>
           <label for="hair"> Hair color</label>
           <select id="hair">
               <option value=""selected disabled hidden>Choose</option>
-              <option name="blonde">Blonde</option>
-              <option name="black">Black</option>
-              <option name="red">Red</option>
-              <option name="brown">Brown</option>
+              <option name="blonde" value="blonde">Blonde</option>
+              <option name="black" value="black">Black</option>
+              <option name="red" value="red">Red</option>
+              <option name="brown" value="brown">Brown</option>
           </select></br>
           <div id="hairstyle">
             <p>Hair Style?</p>
-            <input type="checkbox" name="short" value="">Short<br>
-            <input type="checkbox" name="long" value="">Long<br>
-            <input type="checkbox" name="curly" value="">Curly<br>
-            <input type="checkbox" name="straight" ondragover=""value="">Straight<br>
-            <input type="checkbox" name="bald" value="">Bald<br>
+            <input type="checkbox" name="short" value="short">Short<br>
+            <input type="checkbox" name="long" value="long">Long<br>
+            <input type="checkbox" name="curly" value="curly">Curly<br>
+            <input type="checkbox" name="straight" value="straight">Straight<br>
+            <input type="checkbox" name="bald" value="bald">Bald<br>
           </div>
           <div class="col-md-3">
-          <label for="time"> When  did it happen?</label>
+            <label for="time"> When  did it happen?</label>
 
-          <input id = "time"class="form-control" type="date">
+            <input id="time" class="form-control" type="date">
           </div>
           <label for="description">Describe your incident</label>
           <textarea class="form-control" id="description" rows="3"></textarea></br>
           <label for="name">Perpetrator's name</label></br>
           <input type="name" class="form-control" id="name" placeholder="full name"></br>
-          <label for="name">Perpetrator's car</label></br>
-          <input type="name" class="form-control" id="car" placeholder="model make license plate"></br>
+          <label for="car">Perpetrator's car</label></br>
+          <input type="car" class="form-control" id="car" placeholder="model make license plate"></br>
           <label for="phone">Perpetrator's phone number</label></br>
           <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX"></br>
           <label for="email">Perpetrator's Email address</label></br>
           <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
           <button class="btn btn-info" type="submit">Report</button>
-        </form>
-        <div id="hiddenText">
-          <p><span id="confirmation"></span></p>
-      </div>
-    </div>
-    <div id="thankYouPage" class="container" style="...">
-        <h1>We are here for you..</h1>
-        <div id="displayResult">
 
+  </div>
+    <h3>Reports</h3>
+    <ul id="reports">
+
+    </ul>
+    <div id="displayResult" class="container" style="...">
+      <h1>We are here for you..</h1>
+
+        <p>Neighborhood: <span class="neighborhood"></span></p>
+        <p>Place: <span class="place"></span></p>
+        <p>Contacted: <span class="contacted"></span></p>
+        <p>Incident: <span class="incident"></span></p>
+        <p>Gender: <span class="gender"></span></p>
+        <p>Ethnicity: <span class="ethnicity"></span></p>
+        <p>Hair Color: <span class="haircolor"></span></p>
+        <p>Hair Style: <span class="hairstyle"></span></p>
+        <p>Time: <span class="time"></span></p>
+        <p>Name: <span class="name"></span></p>
+        <p>Car: <span class="car"></span></p>
+        <p>Phone: <span class="phone"></span></p>
+        <p>Email: <span class="email"></span></p>
+        <div id="buttons">
         </div>
+
     </div>
-    </div>
+    </form>
   </body>
 
 </html>
