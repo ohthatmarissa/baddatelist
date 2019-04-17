@@ -3,6 +3,10 @@ let chad = new Report (
   place = "",
   contacted = "",
   incident = "",
+  gender = "",
+  ethnicity = "",
+  haircolor = "",
+  hairstyle = "",
   date = "",
   name = "Chad Badboi",
   car = "",
@@ -15,6 +19,10 @@ let chadwick = new Report (
   place = "",
   contacted = "",
   incident = "",
+  gender = "",
+  ethnicity = "",
+  haircolor = "",
+  hairstyle = "",
   date = "",
   name = "Chadwick Weedick",
   car = "",
@@ -26,6 +34,10 @@ let chaddington = new Report (
   place = "",
   contacted = "",
   incident = "",
+  gender = "",
+  ethnicity = "",
+  haircolor = "",
+  hairstyle = "",
   date = "",
   name = "Chaddington Baddington",
   car = "",
@@ -37,6 +49,10 @@ let chad = new Report (
   place = "",
   contacted = "",
   incident = "",
+  gender = "",
+  ethnicity = "",
+  haircolor = "",
+  hairstyle = "",
   date = "",
   name = "Chadda Hound",
   car = "",
@@ -51,39 +67,6 @@ let reportList = new ReportList();
   reportList.addReport(chadwick);
   reportList.addReport(chaddington);
   reportList.addReport(chadda);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
