@@ -56,77 +56,77 @@ ReportList.prototype.deleteReport = function(id) {
     this.email = email
   }
 // UI logic ----
-let chad = new Report (
-  neighborhood = "hood",
-  place = "alley",
-  contacted = "poke",
-  incident = "ouch",
-  gender = "Male",
-  ethnicity = "white",
-  haircolor = "red",
-  hairstyle = "long",
-  date = "yesterday",
-  description = "",
-  name = "Chad Badboi",
-  car = "firebird",
-  phone = "123-456-7890",
-  email = "douche@douchey.com",
-
-);
-let chadwick = new Report (
-  neighborhood = "",
-  place = "",
-  contacted = "",
-  incident = "",
-  gender = "",
-  ethnicity = "",
-  haircolor = "",
-  hairstyle = "",
-  date = "",
-  description = "",
-  name = "Chadwick Weedick",
-  car = "",
-  phone = "",
-  email = ""
-);
-let chaddington = new Report (
-  neighborhood = "",
-  place = "",
-  contacted = "",
-  incident = "",
-  gender = "",
-  ethnicity = "",
-  haircolor = "",
-  hairstyle = "",
-  date = "",
-  description = "",
-  name = "Chaddington Baddington",
-  car = "",
-  phone = "",
-  email = ""
-);
-let chadda = new Report (
-  neighborhood = "",
-  place = "",
-  incident = "",
-  contacted = "",
-  gender = "",
-  ethnicity = "",
-  haircolor = "",
-  hairstyle = "",
-  date = "",
-  description = "",
-  name = "Chadda Hound",
-  car = "",
-  phone = "",
-  email = ""
-);
+// let chad = new Report (
+//   neighborhood = "hood",
+//   place = "alley",
+//   contacted = "poke",
+//   incident = "ouch",
+//   gender = "Male",
+//   ethnicity = "white",
+//   haircolor = "red",
+//   hairstyle = "long",
+//   date = "yesterday",
+//   description = "",
+//   name = "Chad Badboi",
+//   car = "firebird",
+//   phone = "123-456-7890",
+//   email = "douche@douchey.com",
+//
+// );
+// let chadwick = new Report (
+//   neighborhood = "",
+//   place = "",
+//   contacted = "",
+//   incident = "",
+//   gender = "",
+//   ethnicity = "",
+//   haircolor = "",
+//   hairstyle = "",
+//   date = "",
+//   description = "",
+//   name = "Chadwick Weedick",
+//   car = "",
+//   phone = "",
+//   email = ""
+// );
+// let chaddington = new Report (
+//   neighborhood = "",
+//   place = "",
+//   contacted = "",
+//   incident = "",
+//   gender = "",
+//   ethnicity = "",
+//   haircolor = "",
+//   hairstyle = "",
+//   date = "",
+//   description = "",
+//   name = "Chaddington Baddington",
+//   car = "",
+//   phone = "",
+//   email = ""
+// );
+// let chadda = new Report (
+//   neighborhood = "",
+//   place = "",
+//   incident = "",
+//   contacted = "",
+//   gender = "",
+//   ethnicity = "",
+//   haircolor = "",
+//   hairstyle = "",
+//   date = "",
+//   description = "",
+//   name = "Chadda Hound",
+//   car = "",
+//   phone = "",
+//   email = ""
+// );
 
 let reportList = new ReportList();
-  reportList.addReport(chad);
-  reportList.addReport(chadwick);
-  reportList.addReport(chaddington);
-  reportList.addReport(chadda);
+  // reportList.addReport(chad);
+  // reportList.addReport(chadwick);
+  // reportList.addReport(chaddington);
+  // reportList.addReport(chadda);
 
   function attachReportListeners() {
     $("ul#reports").on("click", "li", function() {
@@ -167,9 +167,9 @@ function showReport(reportId) {
   $(".phone").html(report.phone);
   $(".email").html(report.email);
 
-  let buttons = $("#buttons");
-  buttons.empty();
-  buttons.append("<button class='deleteButton' id=" + report.id + ">Delete</button>");
+  // let buttons = $("#buttons");
+  // buttons.empty();
+  // buttons.append("<button class='deleteButton' id=" + report.id + ">Delete</button>");
 }
 
 
