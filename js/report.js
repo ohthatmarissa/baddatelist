@@ -39,7 +39,7 @@ ReportList.prototype.deleteReport = function(id) {
 }
 
 // business logic for Reports --------
-  function Report(neighborhood, place, incident, contacted, gender, ethnicity, haircolor, hairstyle, time, name, car, phone, email) {
+  function Report(neighborhood, place, incident, contacted, gender, ethnicity, haircolor, hairstyle, date, description, name, car, phone, email) {
     this.neighborhood = neighborhood,
     this.place = place,
     this.incident = incident,
@@ -48,7 +48,8 @@ ReportList.prototype.deleteReport = function(id) {
     this.ethnicity = ethnicity,
     this.haircolor = haircolor,
     this.hairstyle = hairstyle,
-    this.time = time,
+    this.date = date,
+    this.description = description,
     this.name = name,
     this.car = car,
     this.phone = phone,
@@ -64,7 +65,8 @@ let chad = new Report (
   ethnicity = "white",
   haircolor = "red",
   hairstyle = "long",
-  time = "yesterday",
+  date = "yesterday",
+  description = "",
   name = "Chad Badboi",
   car = "firebird",
   phone = "123-456-7890",
@@ -80,7 +82,8 @@ let chadwick = new Report (
   ethnicity = "",
   haircolor = "",
   hairstyle = "",
-  time = "",
+  date = "",
+  description = "",
   name = "Chadwick Weedick",
   car = "",
   phone = "",
@@ -95,7 +98,8 @@ let chaddington = new Report (
   ethnicity = "",
   haircolor = "",
   hairstyle = "",
-  time = "",
+  date = "",
+  description = "",
   name = "Chaddington Baddington",
   car = "",
   phone = "",
@@ -110,7 +114,8 @@ let chadda = new Report (
   ethnicity = "",
   haircolor = "",
   hairstyle = "",
-  time = "",
+  date = "",
+  description = "",
   name = "Chadda Hound",
   car = "",
   phone = "",
@@ -155,7 +160,8 @@ function showReport(reportId) {
   $(".ethnicity").html(report.ethnicity);
   $(".haircolor").html(report.haircolor);
   $(".hairstyle").html(report.hairstyle);
-  $(".time").html(report.time);
+  $(".date").html(report.date);
+  $(".description").html(report.description);
   $(".name").html(report.name);
   $(".car").html(report.car);
   $(".phone").html(report.phone);
@@ -191,15 +197,15 @@ function showReport(reportId) {
       }
 
       reportList.addReport(new Report(userNeighborhood, userPlace, userIncident, userContacted,
-      $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("input[type='checkbox']").val(), $("#time").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
+      $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("input[type='checkbox']").val(), $("#date").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
       ));
 
       $('input[type="radio"]').prop('checked', false);
       $("#gender").val("");
       $("#ethnicity").val();
       $("#hair").val("");
-      $('input[type="checkbox"]').prop('checked', false);
-      $("#time").val("");
+      $("#date").val("");
+      $("#description").val("");
       $("#name").val("");
       $("#car").val("");
       $("#phone").val("");

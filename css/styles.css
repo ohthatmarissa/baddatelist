@@ -1,6 +1,5 @@
 .jumbotron {
   min-height: 300px;
-  /* border: 10px solid black; */
   background-image: url(../img/seattle.jpeg);
   background-position-y: 5%;
   background-size: cover;
@@ -87,4 +86,10 @@ footer {
 
 #displayResult {
   display: none;
+}
+
+#firstpage {
+  margin: 100px;
+  background-color: lightgrey;
+  border : 1px solid #000;
 }
