@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col">
           <div id="neighborhood">
-            <h4>Neighborhood:</h4>
+            <h5>Neighborhood:</h5>
             <input type="radio" name="neighborhood" value="Capitol Hill"> Capitol Hill<br>
             <input type="radio" name="neighborhood" value="WestSeattle"> West Seattle<br>
             <input type="radio" name="neighborhood" value="Ballard"> Ballard<br>
@@ -49,7 +49,7 @@
         </div>
         <div class="col">
           <div id="place">
-            <h4>Place:</h4>
+            <h5>Place:</h5>
             <input type="radio" name="place" value="hotel"> Hotel<br>
             <input type="radio" name="place" value="street"> Street<br>
             <input type="radio" name="place" value="apartment"> Apartment<br>
@@ -57,34 +57,37 @@
             <input type="radio" name="place" value="client's house"> Client's House<br>
             <input type="radio" name="place" value="worker's house"> Worker's house<br>
             <input type="radio" name="place" value="parlour"> Parlour<br>
-            <input type="radio" name="place" value=""> Other <input type="text" name="other_location" />
+            <input type="radio" name="place" value="other"> Other <input type="text" id="other_place" />
           </div><br>
         </div>
         <div class="col">
-          <label for="incident"> What happened?</label>
-          <select id="incident">
-            <option value="" selected disabled hidden>Choose</option>
-            <option name="incident" value="assault">Assault</option>
-            <option name="incident" value="robbery">Robbery</option>
-            <option name="incident" value="harassment">Harassment</option>
-            <option name="incident" value="drugged">They drugged me</option>
-          </select><br>
+          <div id="incident">
+            <h5>What happened?</h5>
+            <input type="radio" name="incident" value="robbery"> Robbery<br>
+            <input type="radio" name="incident" value="sexual harrasment"> Sexual Harrasment<br>
+            <input type="radio" name="incident" value="verbal harrasment"> Verbal Harrasment<br>
+            <input type="radio" name="incident" value="drugged"> Drugged<br>
+            <input type="radio" name="incident" value="robbery"> Robbery<br>
+            <input type="radio" name="incident" value="stalking"> Stalking<br>
+            <input type="radio" name="incident" value="physical harrasment"> Physical Harrasment<br>
+            <input type="radio" name="incident" value="other"> Other <input type="text" id="other_incident" />
+            </div>
         </div>
         <div class="col">
           <div id="contacted">
-            <p>How did they contact you?</p>
+            <h5>How did they contact you?</h5>
             <input type="radio" name="contacted" value="phone"> Phone<br>
             <input type="radio" name="contacted" value="email"> Email<br>
             <input type="radio" name="contacted" value="in-person"> In-person<br>
             <input type="radio" name="contacted" value="online"> Online Ad<br>
             <input type="radio" name="contacted" value="print"> Print ad<br>
-            <input type="radio" name="contacted" value="other"> Other <input type="text" name="other_way" />
+            <input type="radio" name="contacted" value="other"> Other <input type="text" id="other_contacted" />
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <label for="gender"> Perpetrator's gender</label>
+          <label for="gender"> <h5>Perpetrator's gender</h5></label>
           <select id="gender">
             <option value="" selected disabled hidden>Choose</option>
             <option name="male">Male</option>
@@ -93,7 +96,7 @@
             <option name="other">Other</option>
           </select></br>
         </div>
-        <div class="col" <label for="ethnicity"> Perpetrator's ethnicity</label>
+        <div class="col" <label for="ethnicity"><h5> Perpetrator's ethnicity</h5></label>
           <select id="ethnicity">
             <option value="" selected disabled hidden>Choose</option>
             <option name="male" value="white">White</option>
@@ -103,7 +106,7 @@
           </select></br>
         </div>
         <div class="col">
-          <label for="hair"> Hair color</label>
+          <label for="hair"><h5> Hair color</h5></label><br>
           <select id="hair">
             <option value="" selected disabled hidden>Choose</option>
             <option name="blonde" value="blonde">Blonde</option>
@@ -113,29 +116,30 @@
           </select></br>
         </div>
         <div class="col">
-          <div id="hairstyle">
-            <p>Hair Style?</p>
-            <input type="checkbox" name="short" value="short">Short<br>
-            <input type="checkbox" name="long" value="long">Long<br>
-            <input type="checkbox" name="curly" value="curly">Curly<br>
-            <input type="checkbox" name="straight" value="straight">Straight<br>
-            <input type="checkbox" name="bald" value="bald">Bald<br>
-          </div>
+          <label for="hair"><h5> Hair style</h5></label><br>
+          <select id="hair">
+            <option value="" selected disabled hidden>Choose</option>
+            <option name="long" value="long">Long</option>
+            <option name="short" value="short">Short</option>
+            <option name="bald" value="bald">Bald</option>
+            <option name="curly" value="curly">Curly</option>
+            <option name="straight" value="straight">Straight</option>
+          </select></br><br>
         </div>
       </div>
       <div class="col-md-3">
-        <label for="time"> When did it happen?</label>
+        <label for="time"><h5> When did it happen?</h5></label>
         <input id="time" class="form-control" type="date">
       </div>
-      <label for="description">Describe your incident</label>
+      <label for="description"><h5>Describe your incident</h5></label>
       <textarea class="form-control" id="description" rows="3"></textarea></br>
-      <label for="name">Perpetrator's name</label></br>
+      <label for="name"><h5>Perpetrator's name</h5></label></br>
       <input type="name" class="form-control" id="name" placeholder="full name"></br>
-      <label for="car">Perpetrator's car</label></br>
+      <label for="car"><h5>Perpetrator's car</h5></label></br>
       <input type="car" class="form-control" id="car" placeholder="model make license plate"></br>
-      <label for="phone">Perpetrator's phone number</label></br>
+      <label for="phone"><h5>Perpetrator's phone number</5></label></br>
       <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX"></br>
-      <label for="email">Perpetrator's Email address</label></br>
+      <label for="email"><h5>Perpetrator's Email address</h5></label></br>
       <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
       <button class="btn btn-info" type="submit">Report</button>
 
