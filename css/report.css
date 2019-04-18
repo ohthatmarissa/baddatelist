@@ -1,7 +1,37 @@
-.container  {
-  margin: 100px;
+.jumbotron {
+  min-height: 300px;
+  /* border: 10px solid black; */
+  background-image: url(../img/seattle.jpeg);
+  background-position-y: 5%;
+  background-size: cover;
 }
-.container {
+
+#heading {
+  text-align: center;
+  background-color: #cc0000;
+  font-family: Impact, fantasy;
+  letter-spacing: 5px;
+  font-size: 48pt;
+  text-shadow: 1px 1px 3px white;
+  font
+}
+
+.box {
+  height: 8%
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+  background-color: #ff6699;
+  text-align: center;
+  text-shadow: 1px 1px 3px white;
+  font-size: 18pt;
+  color: black;
+}
+
+#firstpage {
+  margin: 100px;
   background-color: lightgrey;
   border : 1px solid #000;
 }
