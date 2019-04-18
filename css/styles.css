@@ -83,13 +83,23 @@ img.align-right {
 footer {
    background: #cc0000;
 }
+#reports {
+  text-align: left;
+}
+
+#report {
+  text-align: left;
+}
 
 #displayResult {
   display: none;
+  text-align: left
 }
 
 #firstpage {
   margin: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   background-color: lightgrey;
   border : 1px solid #000;
 }
