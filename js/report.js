@@ -177,13 +177,24 @@ function showReport(reportId) {
       if (userNeighborhood === "other") {
             userNeighborhood = $("input#other_neighborhood").val();
       }
+      let userPlace = $("input:radio[name=place]:checked").val();
+      if (userPlace === "other") {
+            userPlace = $("input#other_place").val();
+      }
+      let userIncident = $("input:radio[name=incident]:checked").val();
+      if (userIncident === "other") {
+            userIncident = $("input#other_incident").val();
+      }
+      let userContacted = $("input:radio[name=contacted]:checked").val();
+      if (userContacted === "other") {
+            userContacted = $("input#other_contacted").val();
+      }
 
-      reportList.addReport(new Report(userNeighborhood, $("input[name=place]:checked").val(), $("#incident").val(), $("input[name=contacted]:checked").val(),
+      reportList.addReport(new Report(userNeighborhood, userPlace, userIncident, userContacted,
       $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("input[type='checkbox']").val(), $("#time").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
       ));
 
       $('input[type="radio"]').prop('checked', false);
-      $("#incident").val("")
       $("#gender").val("");
       $("#ethnicity").val();
       $("#hair").val("");
