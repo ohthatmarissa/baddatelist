@@ -197,13 +197,14 @@ function showReport(reportId) {
       }
 
       reportList.addReport(new Report(userNeighborhood, userPlace, userIncident, userContacted,
-      $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("input[type='checkbox']").val(), $("#date").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
+      $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("#hairstyle").val(), $("#date").val(), $("#description").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
       ));
 
       $('input[type="radio"]').prop('checked', false);
       $("#gender").val("");
       $("#ethnicity").val();
       $("#hair").val("");
+      $("#hairstyle").val("");
       $("#date").val("");
       $("#description").val("");
       $("#name").val("");

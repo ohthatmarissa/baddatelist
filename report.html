@@ -120,7 +120,7 @@
         </div>
         <div class="col">
           <label for="hair"><h5> Hair style</h5></label><br>
-          <select id="hair">
+          <select id="hairstyle">
             <option value="" selected disabled hidden>Choose</option>
             <option name="long" value="long">Long</option>
             <option name="short" value="short">Short</option>
@@ -134,30 +134,40 @@
         <label for="date"><h5> When did it happen?</h5></label>
         <input id="date" class="form-control" type="date">
       </div>
-      <label for="description"><h5>Describe your incident</h5></label>
-      <textarea class="form-control" id="description" rows="3"></textarea></br>
-      <label for="name"><h5>Perpetrator's name</h5></label></br>
-      <input type="name" class="form-control" id="name" placeholder="full name"></br>
-      <label for="car"><h5>Perpetrator's car</h5></label></br>
-      <input type="car" class="form-control" id="car" placeholder="model make license plate"></br>
-      <label for="phone"><h5>Perpetrator's phone number</5></label></br>
-      <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX"></br>
-      <label for="email"><h5>Perpetrator's Email address</h5></label></br>
-      <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
-      <button class="btn btn-info" type="submit">Report</button>
+    <div class="row">
+        <div class="col-md-6">
+          <label for="description"><h5>Describe your incident</h5></label>
+          <textarea class="form-control" id="description" rows="6"></textarea></br>
+        </div>
+        <div class="col-md-3">
+          <label for="name"><h5>Perpetrator's name</h5></label>
+          <input type="name" class="form-control" id="name" placeholder="full name">
+          <br>
+          <label for="car"><h5>Perpetrator's car</h5></label></br>
+          <input type="car" class="form-control" id="car" placeholder="model make license plate">
+        </div>
+        <div class="col-md-3">
+          <label for="name"><h5>Perpetrator's phone number</h5></label>
+          <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX">
+          </br>
+          <label for="email"><h5>Perpetrator's Email Address</h5></label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
+        </div>
+        <button class="btn btn-info" type="submit">Creat Report</button>
+    </div>
 
   </div>
-  <h3>Reports</h3>
+  <!-- <h3>Reports</h3>
   <ul id="reports">
 
-  </ul>
+  </ul> -->
   <div id="displayResult" class="container" style="...">
     <h1>We are here for you..</h1>
 
     <p>Neighborhood: <span class="neighborhood"></span></p>
     <p>Place: <span class="place"></span></p>
-    <p>Contacted: <span class="contacted"></span></p>
     <p>Incident: <span class="incident"></span></p>
+    <p>Contacted: <span class="contacted"></span></p>
     <p>Gender: <span class="gender"></span></p>
     <p>Ethnicity: <span class="ethnicity"></span></p>
     <p>Hair Color: <span class="haircolor"></span></p>
