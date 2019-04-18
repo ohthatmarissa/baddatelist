@@ -123,13 +123,25 @@ let reportList = new ReportList();
   reportList.addReport(chaddington);
   reportList.addReport(chadda);
 
+  function attachReportListeners() {
+    $("ul#reports").on("click", "li", function() {
+      showReport(this.id);
+    });
+    $("#buttons").on("click", ".deleteButton", function() {
+      reportList.deleteReport(this.id);
+      $("#displayResult").hide();
+      displayReportDetails(reportList);
+    });
+  };
+
 function displayReportDetails(reportListToDisplay) {
   let reportsList = $("ul#reports");
   let reportInfo = "";
   reportListToDisplay.reports.forEach(function(report) {
-    reportInfo += "<li id=" + report.id + ">" + report.name + "</li>"
+    reportInfo += "<li id=" + report.id + "><a href='javascript:void(0)'>" + report.name + "</a></li>"
   });
   reportsList.html(reportInfo);
+  attachReportListeners();
 };
 
 function showReport(reportId) {
@@ -154,23 +166,19 @@ function showReport(reportId) {
   buttons.append("<button class='deleteButton' id=" + report.id + ">Delete</button>");
 }
 
-function attachReportListeners() {
-  $("ul#reports").on("click", "li", function() {
-    showReport(this.id);
-  });
-  $("#buttons").on("click", ".deleteButton", function() {
-    reportList.deleteReport(this.id);
-    $("#displayResult").hide();
-    displayReportDetails(reportList);
-  });
-};
+
 
   $(document).ready(function(){
-    attachReportListeners();
+    displayReportDetails(reportList);
     $("form#report").submit(function(event){
       event.preventDefault();
 
-      reportList.addReport(new Report($("input[name=neighborhood]:checked").val(), $("input[name=place]:checked").val(), $("#incident").val(), $("input[name=contacted]:checked").val(),
+      let userNeighborhood = $("input:radio[name=neighborhood]:checked").val();
+      if (userNeighborhood === "other") {
+            userNeighborhood = $("input#other_neighborhood").val();
+      }
+
+      reportList.addReport(new Report(userNeighborhood, $("input[name=place]:checked").val(), $("#incident").val(), $("input[name=contacted]:checked").val(),
       $("#gender").val(), $("#ethnicity").val(), $("#hair").val(), $("input[type='checkbox']").val(), $("#time").val(), $("#name").val(), $("#car").val(), $("#phone").val(), $("#email").val()
       ));
 

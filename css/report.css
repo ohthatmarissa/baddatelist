@@ -1,7 +1,11 @@
-.container .box {
+.container  {
   margin: 100px;
 }
 .container {
   background-color: lightgrey;
   border : 1px solid #000;
+}
+.box {
+  margin: 100px;
+  align-content: center;
 }

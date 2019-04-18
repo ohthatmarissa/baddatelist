@@ -26,7 +26,7 @@
         <p class="topbar"><a href="resources.html" style="color:black">Resources</a></p>
       </div>
     </div>
-  </div><br><br>
+  </div>
 
   <div id="firstPage" class="container">
     <form id="report">
@@ -44,7 +44,7 @@
             <input type="radio" name="neighborhood" value="Magnolia"> Magnolia<br>
             <input type="radio" name="neighborhood" value="Fremont"> Fremont<br>
             <input type="radio" name="neighborhood" value="Downtown"> Downtown<br>
-            <input type="radio" name="neighborhood" value=""> Other <input type="text" name="other_location" />
+            <input type="radio" name="neighborhood" value="other"> Other <input type="text" id="other_neighborhood" />
           </div><br>
         </div>
         <div class="col">
@@ -60,9 +60,6 @@
             <input type="radio" name="place" value=""> Other <input type="text" name="other_location" />
           </div><br>
         </div>
-
-
-
         <div class="col">
           <label for="incident"> What happened?</label>
           <select id="incident">
@@ -115,8 +112,6 @@
             <option name="brown" value="brown">Brown</option>
           </select></br>
         </div>
-
-
         <div class="col">
           <div id="hairstyle">
             <p>Hair Style?</p>
@@ -130,7 +125,6 @@
       </div>
       <div class="col-md-3">
         <label for="time"> When did it happen?</label>
-
         <input id="time" class="form-control" type="date">
       </div>
       <label for="description">Describe your incident</label>
