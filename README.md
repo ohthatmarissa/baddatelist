@@ -6,7 +6,7 @@
 
 ## Description
 
-A website created with HTML, CSS, Bootstrap, JavaScript, and jQuery where the user can make a report of violence, read other reports of violence, and get information on resources that can help.
+A website created with HTML, CSS, Bootstrap, JavaScript, and jQuery where the user can make a report of violence, read other reports of violence, and get information on resources that can help. Check it out here: https://ohthatmarissa.github.io/baddatelist/
 
 
 ### Specs
